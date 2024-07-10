@@ -10,13 +10,7 @@ const PORT = 5000 || process.env.PORT;
 const app = express();
 app.use(express.json());
 
-app.use(cors(
-    {
-        origin: ["https://frontend-blush-theta-97.vercel.app/"],
-        methods: ["POST", "GET"],
-        Credential: true
-    }
-));
+app.use(cors());
 
 // Load JSON data
 const mealsData = JSON.parse(fs.readFileSync(path.join(__dirname, './data/meals.json'), 'utf-8'));
