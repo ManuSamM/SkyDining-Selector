@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 // Load JSON data
-const mealsData = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/meals.json'), 'utf-8'));
+const mealsData = JSON.parse(fs.readFileSync(path.join(__dirname, './data/meals.json'), 'utf-8'));
 
 // Helper function to fetch Unsplash image
 const fetchUnsplashImage = async (url) => {
@@ -28,6 +28,10 @@ const fetchUnsplashImage = async (url) => {
         return url;
     }
 };
+
+app.get('/', (req, res) => {
+    res.json("hello");
+})
 
 // API for meals.json
 app.get('/api/meals', async (req, res) => {
@@ -60,6 +64,5 @@ app.get('/api/meals', async (req, res) => {
     }
 });
 
-module.exports = app;
 
-// app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
