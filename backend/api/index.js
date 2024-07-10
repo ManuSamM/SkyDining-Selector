@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 // Load JSON data
-const mealsData = JSON.parse(fs.readFileSync(path.join(__dirname, './data/meals.json'), 'utf-8'));
+const mealsData = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/meals.json'), 'utf-8'));
 
 // Helper function to fetch Unsplash image
 const fetchUnsplashImage = async (url) => {
