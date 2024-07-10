@@ -183,3 +183,126 @@ button {
 button:hover {
     background-color: rgba(137, 43, 226, 0.75);
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .meals-container,
+    .passenger-list {
+        width: 100%;
+    }
+
+    .meal-item {
+        grid-template-columns: 1fr;
+        padding: 1rem 0;
+    }
+
+    .meal-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .meal-details {
+        width: 100%;
+    }
+
+    .drinks-list {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .drink-img {
+        width: 45%;
+        height: auto;
+    }
+
+    .passenger-item {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0.5rem 0;
+        height: auto;
+    }
+
+    .passenger-name {
+        font-size: 1rem;
+    }
+
+    .total-price {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding: 0.75rem;
+    }
+
+    .meal-labels,
+    .meal-label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+    }
+
+    .filters {
+        justify-content: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .filters button {
+        padding: 0.25rem 0.5rem;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .meal-item {
+        padding: 0.5rem 0;
+    }
+
+    .meal-title {
+        font-size: 1rem;
+    }
+
+    .meal-price {
+        font-size: 0.875rem;
+    }
+
+    .drink-title {
+        font-size: 0.75rem;
+    }
+
+    .passenger-name {
+        font-size: 0.875rem;
+    }
+
+    .total-price {
+        font-size: 0.875rem;
+    }
+
+    .drinks-list {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .drink-img {
+        width: 45%;
+        height: auto;
+    }
+
+    .filters {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .filters button {
+        padding: 0.25rem 0.5rem;
+        white-space: nowrap;
+    }
+}
