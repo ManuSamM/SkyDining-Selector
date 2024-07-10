@@ -1,0 +1,1 @@
+<a href="https://www.flaticon.com/free-icons/chicken-leg" title="chicken leg icons">Chicken leg icons created by Freepik - Flaticon</a>

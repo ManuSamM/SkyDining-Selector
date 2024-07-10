@@ -1,0 +1,185 @@
+:root {
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.meals-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.filters button {
+    background-color: #ccc;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.filters button.active {
+    background-color: black;
+    border-radius: 25px;
+}
+
+.meals-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding-right: 1rem;
+}
+
+.meal-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 9fr 10fr;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.meal-img {
+    min-width: 15em;
+    max-width: 15em;
+    height: 19em;
+    margin-right: 1rem;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.meal-details {
+    flex: 1;
+}
+
+.meal-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.meal-labels {
+    margin-bottom: 0.5rem;
+}
+
+.meal-label {
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+}
+
+.meal-price {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.drinks-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.drink-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.drink-img {
+    width: 3.8em;
+    height: 5em;
+    margin-right: 0.5rem;
+    border-radius: 8px;
+}
+
+.drink-title {
+    font-size: 0.875rem;
+    color: #555;
+}
+
+.passenger-list {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    position: sticky;
+    top: 1rem;
+    height: 90vh;
+    overflow-y: auto;
+}
+
+.passenger-item {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+    height: 3em;
+}
+
+.passenger-item.active .passenger-name {
+    color: deepskyblue;
+}
+
+.passenger-name {
+    font-size: 1.125rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.passenger-item button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    white-space: nowrap;
+}
+
+.passenger-item button:hover {
+    background-color: #ff7875;
+}
+
+.total-price {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: rgba(137, 43, 226, 0.636);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(137, 43, 226, 0.75);
+}
