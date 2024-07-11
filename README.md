@@ -1,4 +1,5 @@
 https://skydining-frontend.vercel.app/
+
 This is a basic app to select meal for flight passengers.
 Click on a passenger in the right part of the web page. The text will turn blue, which means that the particular passenger is selected.
 Then select a meal by clicking the select button
