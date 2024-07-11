@@ -28,7 +28,10 @@ const MealsList = () => {
     }, []);
 
     const selectMeal = (meal) => {
-        if (!activePassenger) return;
+        if (!activePassenger) {
+            alert("Select a Passenger");
+            return;
+        }
         setSelectedMeals((prevSelectedMeals) => ({
             ...prevSelectedMeals,
             [activePassenger]: { meal, drink: null },
